@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>drawing</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -47,16 +47,26 @@ height: 10px;
 background: #000;
 border-radius: 50%;
 }
+.background {
+    background-color: #00FFFF;
+  }
 </style>
 </head>
 <body>
-<h1>Collaborate!</h1>
-    <textarea>Hello out there!</textarea>
-    <script src="https://togetherjs.com/togetherjs-min.js">
+<div class="background">
+	<div>
+		<div id="logo">
+			<h1>画板</h1><br>
+			<h2>Drawing Board</h2>			
+		</div>
+		
+	</div>
+<script src="https://togetherjs.com/togetherjs-min.js">
     </script>
     <div id="togetherjs-div">
       <button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
     </div>
+</div>
 <div id="wrap">
 <div class="toolbar">
 <input class='size' type="text" placeholder="size">
@@ -71,7 +81,8 @@ border-radius: 50%;
 
 
 </div>
-
+<div class="background">	
+</div>
 </body>
 <script>
 var aInput = document.getElementsByTagName('input'),
